@@ -93,6 +93,7 @@ if __name__ == '__main__':
         pubkey = jsonobj["pubkey"]
     else:
         pubkey = nostr.getBotPrivateKey().public_key.hex()
+    logger.info(f"Preparing message with pubkey {pubkey} and created_at {created_at} for kind {kind}")
     e = Event(created_at=created_at,public_key=pubkey,content=content,kind=kind,tags=tags)
     bigzeros = 0
     if pow > 0:
