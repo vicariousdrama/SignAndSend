@@ -1,0 +1,20 @@
+{
+    "nostr": {
+        "powonly.comment": "Indicates whether running in POW only mode",
+        "powonly": true,
+        "botnsec.comment": "The nsec for the primary bot running the service. Can leave blank if only doing POW and not sign and send",
+        "botnsec": "...",
+        "relays.comment": "The list of relays that the primary bot uses",
+        "relays": [
+            {"url":"wss://nostr.pleb.network","read":true,"write":true},
+            {"url":"wss://nostr-pub.wellorder.net","read":true,"write":true},
+            {"url":"wss://nostr.mom","read":true,"write":true},
+            {"url":"wss://relay.nostr.bg","read":true,"write":true},
+            {"url":"wss://relay.damus.io","read":true,"write":true},
+            {"url":"wss://nos.lol","read":true,"write":true},
+            {"url":"wss://e.nos.lol","read":true,"write":true},
+            {"url":"wss://relayable.org","read":true,"write":true},
+            {"url":"wss://nostr.oxtr.dev","read":true,"write":true}
+        ]
+    }
+}
