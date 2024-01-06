@@ -106,7 +106,7 @@ if __name__ == '__main__':
             zeros = 256 - len(thebits)
             if zeros > bigzeros: bigzeros = zeros
             if powcheck % 500000 == 0:
-                logger.info(f"Working on proof of work {pow} check {powcheck} (highest: {bigzeros}) with time {created_at}")
+                logger.info(f"Working on proof of work {pow} check {powcheck:,} (highest: {bigzeros}) with time {created_at}")
             if zeros >= pow:
                 logger.info(e.to_message())
         logger.info(f"Nonce: {powcheck}, POW: {pow}, ID: {e.id}")
