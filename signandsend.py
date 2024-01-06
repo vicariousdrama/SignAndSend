@@ -86,6 +86,9 @@ if __name__ == '__main__':
     if pow > 0:
         if noncetag == -1:
             tags.append(["nonce",str(powcheck),str(pow)])
+        else:
+            tags[noncetag][1] = str(powcheck)
+            tags[noncetag][2] = str(pow)
     if "pubkey" in jsonobj:
         pubkey = jsonobj["pubkey"]
     else:
