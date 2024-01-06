@@ -71,8 +71,8 @@ if __name__ == '__main__':
             noncetagnum += 1
             if tag[0] == "nonce":
                 noncetagfound = True
-                pow = tag[2]
-                powcheck = tag[1]
+                pow = int(tag[2])
+                powcheck = int(tag[1])
         if noncetagfound: noncetag = noncetagnum
     else:
         tags = None
