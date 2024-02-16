@@ -112,9 +112,10 @@ if __name__ == '__main__':
                 logger.info(e.to_message())
         logger.info(f"Nonce: {powcheck}, POW: {pow}, ID: {e.id}")
 
-    if not "powonly" in jsonobj: quit()
-    if jsonobj["powonly"]: quit()
+#    if not "powonly" in jsonobj: quit()
+#    if jsonobj["powonly"]: quit()
 
+    logger.info("signing and sending")
     nostr.getBotPrivateKey().sign_event(e)
     # Connect to relays
     nostr.connectToRelays()
